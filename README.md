@@ -1,4 +1,5 @@
-## Pretty print of a binary tree
+# Pretty print of a binary tree
+## Par Marc VILLAIN
 
 NOTE
 ----------------------
@@ -8,9 +9,9 @@ L'auteur ne sera en aucun cas mis en cause en cas d'abus d'utilisation ou de par
 
 UTILISATION
 ----------------------
-> Placer le fichier prettyPrint.py dans un dossier placé à côté de votre fichier de test
-> Ajoutez cette ligne au début de votre fichier de test: 'from [VOTRE DOSSIER] import prettyPrint'
-> Affichez votre BinTree de la manière suivante: 'prettyPrint.printTree(B)'
+1. Placer le fichier prettyPrint.py dans un dossier placé à côté de votre fichier de test
+2. Ajoutez cette ligne au début de votre fichier de test: 'from [VOTRE DOSSIER] import prettyPrint'
+3. Affichez votre BinTree de la manière suivante: 'prettyPrint.printTree(B)'
 
 EXEMPLE DE CODE
 ----------------------
@@ -19,9 +20,9 @@ from [VOTRE DOSSIER] import prettyPrint
 B = BinTree(1, BinTree(2, None, None), BinTree(3, None, None))
 prettyPrint.printTree(B)
 
->>>>
+Affichage:
  1
-/ \
+/ \\
 2 3
 
 ----------------------
