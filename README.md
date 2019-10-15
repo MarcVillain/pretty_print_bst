@@ -1,28 +1,41 @@
-# Pretty print of a binary tree
-###### par Marc VILLAIN
+# pretty_print_bst
+Pretty printing branches of a Python binary tree.
 
+## STRUCTURE
 
-NOTE
-----------------------
-Ce fichier est distribué dans un cadre de tests mais ne remplace en aucun cas vos propres vérifications.
-L'auteur ne sera pas tenu responsable en cas de dysfonctionnement de ce code.
-L'auteur ne sera en aucun cas mis en cause en cas d'abus d'utilisation ou de partage de ce code.
-
-
-UTILISATION
-----------------------
-1. Placer le fichier prettyPrint.py dans un dossier placé à côté de votre fichier de test
-2. Ajoutez cette ligne au début de votre fichier de test: 'from [VOTRE DOSSIER] import prettyPrint'
-3. Affichez votre BinTree de la manière suivante: 'prettyPrint.printTree(B)'
-
-
-EXEMPLE DE CODE
-----------------------
 ```
-from [VOTRE DOSSIER] import prettyPrint
+class BinTree:
+    def __init__(self, key, left, right):
+        self.key = key
+        self.left = left
+        self.right = right
+```
+
+## HOW TO USE
+Place this file next to the file in which you want to use the function:
+```
+your_folder/
+|-- your_file.py
+|-- pretty_print.py
+```
+Add this line to your file:
+```
+from pretty_print import *
+
+# your code
+```
+Display your BinTree this way:
+```
+print_tree(B)
+```
+
+## EXAMPLE
+```
+# your_file.py
+from pretty_print import *
 
 B = BinTree(1, BinTree(2, None, None), BinTree(3, None, None))
-prettyPrint.printTree(B)
+print_tree(B)
 
 >>>>
  1
@@ -30,6 +43,5 @@ prettyPrint.printTree(B)
 2 3
 ```
 
-
-----------------------
-Have fun ! :)
+## KNOWN ISSUES (that will probably never be fixed)
+* Key length is not taken into account.
